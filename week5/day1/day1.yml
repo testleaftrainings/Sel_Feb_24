@@ -1,0 +1,108 @@
+Agenda :
+
+Week5.day1:
+
+> 02:30 - 03:15  -> TestNG Introduction
+> 03:15 - 03:45  -> Sequential Execution
+> 03:45 - 04:10  -> Breakout
+> 04:10 - 04:20  -> Break
+> 04:20 - 04:50  -> Parallel Execution
+> 04:50 - 05:10  -> Breakout
+> 05:10 - 06:10  -> Annotations
+> 06:10 - 06:30  -> Breakout
+
+
+TestNG Introduction:
+
+TestNG- Test Next Generation
+J unit
+TestNG- J unit and N unit 
+
+TestNG- Execution Framework
+
+Selenium- main method
+
+
+Create lead
+Edit lead
+Delete lead
+Merge lead
+
+TestNG
+
+
+
+
+
+
+
+
+
+Steps to start with TestNG:
+
+->Convert main method to a normal method 
+ -> remove static keyword 
+ -> remove arguments(String[] args) 
+ -> Give meaningful name for the method i.e 
+ -> replace main with runCreateLead
+Add @Test on top of the method import @Test from org.testng.annotations
+Right click and run as 1 TestNG Test
+Steps to do Sequential Execution:
+Select the required testcases and click TestNG -> Convert to TestNG -> A testng.xml wizard will appear
+If you want give suite name, test name and click finish
+A testng.xml file will appear inside your project
+Double click and open the xml file Note : By default Design tab will be selected -> Select the source tab in the bottom
+Run the suite file as Run As -> TestNG Suite
+testng.xml
+Location -> path of testng.xml
+-> Represents a test suite
+Contains on eor more
+- Represents a testcase / group of testcases -> contains one or more classes contains one or more REpresents the java classes which contains test method verbose - It is an attribute to get the failure logs in the console
+
+
+<suite>
+
+<test>
+
+<classes>
+
+<class name=week5.day1.createlead />
+
+ </classes>
+
+<classes>
+<class name=week5.day1.deletelead/>
+
+</classes>
+
+
+
+</test>
+
+<test></test>
+
+</suite>
+
+To get error log in console
+add  attribute name "verbose"
+
+verbose default value=1
+range between - 1 to 10
+verbose=5
+
+
+Annotations:
+
+@Test -> Mandatory 
+
+other annotations are optional
+
+@Before Suite
+  @Before Test
+    @Before class
+      @Before Method
+         @Test
+      @After Method   
+    @After Class
+  @After Test
+@After Siute      
