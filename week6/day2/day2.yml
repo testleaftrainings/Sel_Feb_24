@@ -1,0 +1,92 @@
+week6.day2
+
+Todays Agenda: 
+02:30 - 03:45 -> Parameterization 
+03:45 - 04:10 -> Breakout 
+04:10 - 04:20 -> Break
+04:20 - 05:00 -> Hooks Implementation
+05:00 - 05:25 -> Breakout+Break
+05:25 - 06:00 -> Tags
+06:00 - 06:15 -> Breakout
+06:15 - 06:45 -> Explicit Wait
+
+
+
+Parameterization:
+
+Static :
+   1. Identify the data in the feature file
+       -username,password
+   2. Surround the data with ''
+   3. Replace the data which is surrounded with '' as {string} in the StepDefintion
+   4. Pass input arguments to the method and replace the hardcoded data with the arguments
+
+
+
+
+
+
+How to pass multiple data using Scenario Outline:
+1. To pass multiple data for a single scenario the Ghekin keyword used is Scenario Outline
+2. In Scenario Outline identify the dynamic data and replace that with <>
+    ex: <companyname>
+3. Under Examples keyword create pipeline symbol and mention the column name
+   ex: |companyname|
+   Note: The name should exactly match
+    -Pass the values in the second row of Examples
+    ex: |TestLeaf|  (1st set of data)
+        |Qeagle|    (2nd set of data)
+                                                      {string}-only string
+4.Go to the StepDefinition and replace <companyname> with (.*)$ -string,integer
+5.Pass Input arguments to the method and replace the hardcoded value withe the argument   
+
+
+
+
+
+InvalidMethodException:
+  - You're not allowed to extend classes that define Step Definitions or hooks
+
+
+
+
+
+
+
+
+
+Hooks Implementation:
+   Cucumber Annotations - > Hooks in Ruby Language
+   its run before the scenario and after scenario
+   Hooks:
+       @Before :
+          -is to have common precondition for each scenario
+        @After : 
+           - is to have common postcondition for each scenario
+
+
+Steps to implement Hooks:
+Create a package called hooks and create a class called HooksImplementation
+Create 2 methods preCondition() and postCondition() and annotate with @Before and @After
+The Hooks class should extends BaseClass
+In the Runner class inside glue attribute mention hooks package as well glue ={"steps","hooks"}
+
+
+
+
+
+
+Tags:
+It is used to categorize the scenarios
+
+tags="@smoke" )// only smoke scenarios will be executed tags="not @smoke")
+ // to exclude a scenario from execution tags="@smoke or @functional")
+ // To run scenarios that have either of the tags tags="@functional and @regression" )
+ //To run scenarios which has both the tags
+
+
+
+
+
+tags:
+   -to categerize the scenarios
