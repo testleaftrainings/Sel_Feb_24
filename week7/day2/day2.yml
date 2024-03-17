@@ -1,0 +1,118 @@
+week7.day2:
+
+Today's Agenda:
+02:30 - 03:15 -> POM with Cucumber
+03:15 - 03:35 -> Breakout
+03:35 - 04:30 -> POM with ThreadLocal
+04:30 - 04:50 -> Breakout
+04:50 - 05:00 -> Break
+05:00 - 06:00 -> Extent Report
+06:00 - 06:15 -> Breakout
+06:15 - 06:30 -> Live Quiz
+
+
+
+
+
+
+
+
+
+
+
+POM with Cucumber:
+
+
+
+
+For TestNG _POM : - with driver as static -> sequential execution is possible
+ - To have sequential and parallel execution declare Parameterized Constructor in each pages
+
+For Cucumber_POM: 
+- Constructor should not be defined 
+- With driver as static 
+-> sequential execution is possible
+
+
+
+POM with ThreadLocal:
+
+Thread safety when working with variable ina multithreaded environment .
+it allows you to store and retrieve values that are specific to the current thread,
+
+-Java Class to create variable which can be used to read and write within a single thread. 
+ThreadLocal implementation of Webdriver will support TestNG parallel execution and cucumber
+
+DisAdvantage:
+
+As the constructor call is not allowed in cucumber
+To acheive parallel execution without constructor in cucumber
+
+==============================
+
+To support both cucumberand TestNG
+
+---supportsequential execution of both TestNG and cucumber
+
+--not able to use for parallel executionof TestNG because cucumber is not supporting driver to be passed inthe constructor.
+
+Add ThreadLocalclass in Basecall method 
+private static final ThreadLocal<RemoteWebDriver> tldriver=new ThreadLocal<RemoteWebDriver>();
+
+
+ThreadLocal:
+Java class which is used to access each thread independently
+ private static final ThreadLocal chDriver = new ThreadLocal();
+private: - This variable can be accessed only within the class static+final
+ - constant -> cannot change the value
+
+private static final ThreadLocal<RemoteWebDriver> tldriver=new ThreadLocal<RemoteWebDriver>();
+
+public void setDriver() {
+    //Sets the current thread's copy of this thread-local variable
+	chDriver.set(new ChromeDriver());
+}
+
+public ChromeDriver getDriver() {
+    //Returns the value in the current thread's copy of this thread-local variable
+	return chDriver.get();
+}
+
+add setDriver() method to @BeforeMethod
+
+Remove the constructor from all the pages
+
+Change the 'driver' to 'getDriver()'  in all the actions in the pages
+Encapsulation:
+ - getter and setter methods   
+
+
+TestNG:
+*Emailable report
+*Index.html 
+
+Cucumber:
+*Normal report
+
+ Extent Report:
+
+ Steps: 
+		 
+		 * 1.Setup Physical report path 
+		 * 2.Create object for extentreports
+		 * 3.Attach data with physical file-combine step 1 & step 2
+		 * 4.Create a testcase and assigned test details 
+     i can give testcase name, testcase dcs,author name,category
+		 * 5.Steps level status 
+     pass
+     fail
+		 * 6.Mandatory step to stop.
+close report
+
+
+
+		 * ExtentHtmlreporter-set path
+               ExtentReports
+                 Attach reporter
+                     ExtentTest
+                         Mediaenititybuilder
