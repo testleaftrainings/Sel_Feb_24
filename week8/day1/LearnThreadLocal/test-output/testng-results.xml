@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="4" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="26957" started-at="2024-03-23T18:47:13 IST" finished-at="2024-03-23T18:47:39 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="26957" started-at="2024-03-23T18:47:13 IST" finished-at="2024-03-23T18:47:39 IST">
+      <class name="testcases.TC_002_CreateLeadTC">
+        <test-method status="PASS" signature="setDetails()[pri:0, instance:testcases.TC_002_CreateLeadTC@2fd66ad3]" name="setDetails" is-config="true" duration-ms="15" started-at="2024-03-23T18:47:13 IST" finished-at="2024-03-23T18:47:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDetails -->
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:testcases.TC_002_CreateLeadTC@2fd66ad3]" name="preCondition" is-config="true" duration-ms="14519" started-at="2024-03-23T18:47:13 IST" finished-at="2024-03-23T18:47:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="runCreateLead()[pri:0, instance:testcases.TC_002_CreateLeadTC@2fd66ad3]" name="runCreateLead" duration-ms="11591" started-at="2024-03-23T18:47:27 IST" finished-at="2024-03-23T18:47:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runCreateLead -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:testcases.TC_002_CreateLeadTC@2fd66ad3]" name="postCondition" is-config="true" duration-ms="763" started-at="2024-03-23T18:47:39 IST" finished-at="2024-03-23T18:47:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- testcases.TC_002_CreateLeadTC -->
+      <class name="testcases.TC_001_LoginTC">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:testcases.TC_001_LoginTC@27d415d9]" name="startReport" is-config="true" duration-ms="188" started-at="2024-03-23T18:47:12 IST" finished-at="2024-03-23T18:47:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="setDetails()[pri:0, instance:testcases.TC_001_LoginTC@27d415d9]" name="setDetails" is-config="true" duration-ms="11" started-at="2024-03-23T18:47:13 IST" finished-at="2024-03-23T18:47:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDetails -->
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:testcases.TC_001_LoginTC@27d415d9]" name="preCondition" is-config="true" duration-ms="16036" started-at="2024-03-23T18:47:13 IST" finished-at="2024-03-23T18:47:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="runLogin()[pri:0, instance:testcases.TC_001_LoginTC@27d415d9]" name="runLogin" duration-ms="5570" started-at="2024-03-23T18:47:29 IST" finished-at="2024-03-23T18:47:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runLogin -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:testcases.TC_001_LoginTC@27d415d9]" name="postCondition" is-config="true" duration-ms="1499" started-at="2024-03-23T18:47:34 IST" finished-at="2024-03-23T18:47:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:testcases.TC_001_LoginTC@27d415d9]" name="endReport" is-config="true" duration-ms="695" started-at="2024-03-23T18:47:40 IST" finished-at="2024-03-23T18:47:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- testcases.TC_001_LoginTC -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
