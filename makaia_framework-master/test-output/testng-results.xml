@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="36905" started-at="2024-03-24T19:01:02 IST" finished-at="2024-03-24T19:01:39 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper,cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.salesforce.testcases.TC_001_LoginTC@3439f68d]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="36905" started-at="2024-03-24T19:01:02 IST" finished-at="2024-03-24T19:01:39 IST">
+      <class name="com.salesforce.testcases.TC_001_LoginTC">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.salesforce.testcases.TC_001_LoginTC@3439f68d]" name="startReport" is-config="true" duration-ms="288" started-at="2024-03-24T19:01:02 IST" finished-at="2024-03-24T19:01:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="setData()[pri:0, instance:com.salesforce.testcases.TC_001_LoginTC@3439f68d]" name="setData" is-config="true" duration-ms="1" started-at="2024-03-24T19:01:02 IST" finished-at="2024-03-24T19:01:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.salesforce.testcases.TC_001_LoginTC@3439f68d]" name="setUpClass" is-config="true" duration-ms="366" started-at="2024-03-24T19:01:02 IST" finished-at="2024-03-24T19:01:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="startTestCase()[pri:0, instance:com.salesforce.testcases.TC_001_LoginTC@3439f68d]" name="startTestCase" is-config="true" duration-ms="36" started-at="2024-03-24T19:01:03 IST" finished-at="2024-03-24T19:01:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.salesforce.testcases.TC_001_LoginTC@3439f68d]" name="preCondition" is-config="true" duration-ms="17083" started-at="2024-03-24T19:01:04 IST" finished-at="2024-03-24T19:01:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="runLogin(java.lang.String,java.lang.String)[pri:0, instance:com.salesforce.testcases.TC_001_LoginTC@3439f68d]" name="runLogin" duration-ms="12740" started-at="2024-03-24T19:01:21 IST" data-provider="fetchData" finished-at="2024-03-24T19:01:34 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[gokul.sekar@testleaf.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Leaf@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runLogin -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.salesforce.testcases.TC_001_LoginTC@3439f68d]" name="postCondition" is-config="true" duration-ms="5065" started-at="2024-03-24T19:01:34 IST" finished-at="2024-03-24T19:01:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.salesforce.testcases.TC_001_LoginTC@3439f68d]" name="tearDownClass" is-config="true" duration-ms="7" started-at="2024-03-24T19:01:39 IST" finished-at="2024-03-24T19:01:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="endResult()[pri:0, instance:com.salesforce.testcases.TC_001_LoginTC@3439f68d]" name="endResult" is-config="true" duration-ms="1784" started-at="2024-03-24T19:01:39 IST" finished-at="2024-03-24T19:01:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endResult -->
+      </class> <!-- com.salesforce.testcases.TC_001_LoginTC -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
